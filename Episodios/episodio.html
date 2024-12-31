@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fionna y Cake</title>
+    <link rel="icon" href="/Images/Icon/icon.png" type="image/png">
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo-container">
+            <img class="logo-icon" src="/Images/header.png" alt="Logo">
+        </div>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Episodios</a></li>
+                <li><a href="#">Extra</a></li>
+            </ul>
+            <button class="btn" onclick="window.open('mailto:rph26031994@gmail.com', '_blank')">Registrarse</button>
+        </nav>
+
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <div class="side-menu" id="side-menu">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#experience">Episodios</a></li>
+            <li><a href="#projects">Extra</a></li>
+            <li><a href="mailto:rph26031994@gmail.com">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <div id="episodio-container">
+        <h1 id="episodio-nombre"></h1>
+        <p id="episodio-descripcion"></p>
+        <div id="video-container"></div>
+    </div>
+    
+
+
+    <script src="lista.js"></script>
+    <script src="/script.js"></script>
+</body>
+
+</html>

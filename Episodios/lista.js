@@ -4,7 +4,7 @@ const episodios = [
         preview:'/Images/Episodios/preview.jpg',
         name: 'Fionna Campbell',
         description: 'Fionna Campbell, una joven que vive sola con su gato Cake en la ciudad, sueña con vivir aventuras fantásticas y se muestra cínica y deprimida a pesar de tener amigos y conocidos. Cuando Cake empieza a comportarse de forma extraña, Fionna va al veterinario y la despiden del trabajo. Finalmente se dirige al estrafalario Ellis P. y le confiesa abiertamente sus propias inseguridades personales. De repente, Cake persigue una misteriosa luz azul y salta al puesto de un vendedor de helados, donde desaparece misteriosamente.',
-        url: 'https://drive.google.com/file/d/1DL7NMzL5luiWpO_eT8rvGRijPvXNqJcd/view?usp=sharing',
+        url: 'https://drive.google.com/uc?export=view&id=1DL7NMzL5luiWpO_eT8rvGRijPvXNqJcd',
     },
     {
         id: 2,
@@ -70,3 +70,25 @@ const episodios = [
         url: 'https://drive.google.com/file/d/1ss5KQsldV3DauenVM1dPB04iGI7YuxZx/view?usp=sharing',
     }
 ];
+
+// Obtener los parámetros de la URL
+const urlParams = new URLSearchParams(window.location.search);
+const id = urlParams.get('id');
+const nombre = urlParams.get('name');
+const descripcion = urlParams.get('description');
+const videoUrl = urlParams.get('url');
+
+// Mostrar los datos del episodio
+document.getElementById('episodio-nombre').textContent = nombre;
+document.getElementById('episodio-descripcion').textContent = descripcion;
+
+// Insertar el video
+const videoContainer = document.getElementById('video-container');
+const iframe = document.createElement('iframe');
+iframe.src = videoUrl;
+iframe.frameborder = "0";
+iframe.allow = "autoplay; encrypted-media";
+iframe.allowfullscreen = true;
+iframe.width = "100%";
+iframe.height = "360px";
+videoContainer.appendChild(iframe);
