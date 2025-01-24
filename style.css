@@ -298,6 +298,10 @@ body {
     margin-bottom: 20px;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Ajustes responsivos para pantallas más pequeñas */
 @media (max-width: 768px) {
     .hero {
@@ -456,8 +460,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 40px 20px; 
-    max-width: 1200px;  
+    padding: 40px 20px;
+    max-width: 1200px;
     margin: 20px auto;
     color: #fff;
     overflow: hidden;
@@ -465,31 +469,32 @@ body {
 
 /* Título del episodio */
 #episodio-nombre {
-    font-size: 2rem;  
-    font-weight: 700;   
-    color: #e50914;     
+    font-size: 2rem;
+    font-weight: 700;
+    color: #e50914;
     margin-bottom: 15px;
-    letter-spacing: 1px; 
-    text-transform: uppercase; 
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 /* Descripción del episodio */
 #episodio-descripcion {
     font-size: 1rem;
-    color: #ccc;        
+    color: #ccc;
     line-height: 1.6;
     margin-bottom: 30px;
-    padding: 0 20px;     
-    text-align: left;  /* Cambié de center a left */
+    padding: 0 20px;
+    text-align: left;
+    /* Cambié de center a left */
 }
 
 /* Contenedor del video */
 #video-container {
     width: 100%;
-    max-width: 1000px;  
-    aspect-ratio: 16 / 9; 
-    background-color: #000; 
-    border-radius: 12px;   
+    max-width: 1000px;
+    aspect-ratio: 16 / 9;
+    background-color: #000;
+    border-radius: 12px;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -505,21 +510,21 @@ body {
 /* Responsive */
 @media (max-width: 768px) {
     #episodio-container {
-        padding: 30px 15px; 
+        padding: 30px 15px;
     }
 
     #episodio-nombre {
-        font-size: 1rem;  
+        font-size: 1rem;
     }
 
     #episodio-descripcion {
-        font-size: 0.5rem;    
-        padding: 0 10px;    
+        font-size: 0.5rem;
+        padding: 0 10px;
     }
 
     #video-container {
-        max-width: 100%;  
-        aspect-ratio: 16 / 9; 
+        max-width: 100%;
+        aspect-ratio: 16 / 9;
     }
 }
 
@@ -528,48 +533,48 @@ body {
     color: white;
     padding: 40px 20px;
     text-align: center;
-  }
-  
-  .footer-content {
+}
+
+.footer-content {
     max-width: 1100px;
     margin: 0 auto;
-  }
-  
-  .footer-text {
+}
+
+.footer-text {
     font-size: 1rem;
     font-weight: 500;
     margin-bottom: 15px;
     color: #fff;
-  }
-  
-  .footer-text strong {
-    color: #e50914; /* Resalta 'RodriDev' */
-  }
-  
-  .social-links {
+}
+
+.footer-text strong {
+    color: #e50914;
+    /* Resalta 'RodriDev' */
+}
+
+.social-links {
     margin-top: 20px;
-  }
-  
-  .social-icon {
+}
+
+.social-icon {
     margin: 0 15px;
     font-size: 1.5rem;
     color: white;
     transition: color 0.3s ease, transform 0.3s ease;
-  }
-  
-  .social-icon:hover {
-    color: #ff0066; 
-    transform: scale(1.2); 
-  }
-  
-  /* Responsive */
-  @media (max-width: 768px) {
+}
+
+.social-icon:hover {
+    color: #ff0066;
+    transform: scale(1.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
     .footer-text {
-      font-size: 0.6rem;
+        font-size: 0.6rem;
     }
-  
+
     .social-icon {
-      font-size: 0.8rem;
+        font-size: 0.8rem;
     }
-  }
-  
+}
